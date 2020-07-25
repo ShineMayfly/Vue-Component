@@ -12,8 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        // target: 'http://36.154.93.210:8103',  // cqy
-        target: 'http://118.24.180.243:8103', // 测试
+        target: 'http://36.154.93.210:8103', // cqy
+        // target: 'http://118.24.180.243:8103', // 测试
         headers: {
           // 设置token
           'Token': '8D228257D5D743B7A12709A6C5CC371D',

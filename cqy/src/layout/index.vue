@@ -2,7 +2,7 @@
   <el-container>
     <el-header>
       <nav-title @switch="change"></nav-title>
-      <!-- <nav-tabs></nav-tabs> -->
+      <nav-tabs :tabs="tabList"></nav-tabs>
     </el-header>
     <el-container>
       <el-drawer :visible.sync="drawer"
@@ -25,16 +25,19 @@
 
 <script>
 import NavTitle from './components/NavTitle'
+import NavTabs from './components/NavTabs'
 import '../styles/animation.css'
 
 export default {
   name: 'layout',
   components: {
-    NavTitle
+    NavTitle,
+    NavTabs
   },
   data () {
     return {
-      drawer: false
+      drawer: false,
+      tabList: [{ name: '111111', title: '11111111', closable: true }]
     }
   },
   methods: {
